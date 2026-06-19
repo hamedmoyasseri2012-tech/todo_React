@@ -38,7 +38,7 @@ const TodoStatus = () => {
         <div className="flex  justify-around  items-center rounded-xl pl-2">
           <div className="flex flex-col items-center justify-between ">
             <p className="text-[#8d8f90] text-xl font-light ">Progress</p>
-            <span className="text-[#50b2d8] text-3xl ">0</span>
+            <span className="text-[#50b2d8] text-3xl ">0%</span>
           </div>
           <i className="text-[#50b2d8] text-2xl">
             <RiProgress2Line />
