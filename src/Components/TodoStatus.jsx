@@ -6,7 +6,7 @@ import { RiProgress2Line } from "react-icons/ri";
 const TodoStatus = () => {
   return (
     <>
-    <div></div>
+      <div></div>
       <div className="grid grid-cols-4  items-center bg-white text-start border rounded-xl shadow-xl-[#fdfdfd] border-[#ececec]">
         <div className="flex items-center justify-around border-r border-r-[#ececec] text-start pl-2">
           <div className="flex flex-col justify-around items-center ">
@@ -38,7 +38,7 @@ const TodoStatus = () => {
         <div className="flex  justify-around  items-center rounded-xl pl-2">
           <div className="flex flex-col items-center justify-between ">
             <p className="text-[#8d8f90] text-xl font-light ">Progress</p>
-            <span className="text-[#50b2d8] text-3xl ">0%</span>
+            <span className="text-[#50b2d8] text-3xl ">%0</span>
           </div>
           <i className="text-[#50b2d8] text-2xl">
             <RiProgress2Line />
