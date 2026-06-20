@@ -7,7 +7,7 @@ const TodoStatus = () => {
   return (
     <>
       <div></div>
-      <div className="grid grid-cols-4  items-center bg-white text-start border rounded-xl shadow-xl-[#fdfdfd] border-[#ececec]">
+      <div className="grid grid-cols-4 w-full items-center bg-white text-start border rounded-xl shadow-xl-[#fdfdfd] border-[#ececec]">
         <div className="flex items-center justify-around border-r border-r-[#ececec] text-start pl-2">
           <div className="flex flex-col justify-around items-center ">
             <p className="text-[#8d8f90] text-xl font-light">Total Tasks </p>
