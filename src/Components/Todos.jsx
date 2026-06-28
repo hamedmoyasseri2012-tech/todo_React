@@ -103,12 +103,20 @@ const Todos = () => {
       </div>
 
       <table className="flex flex-col w-full justify-around items-center">
-        <thead>
-          <tr className="flex justify-around tracking-widest px-6 py-6 uppercase items-center text-[#2b3136]">
-            <th>Task</th>
-            <th>Due Date</th>
-            <th>Status</th>
-            <th>Actions</th>
+        <thead className="flex justify-around items-center w-full">
+          <tr className="flex justify-around   px-6 py-6 uppercase items-center text-[#2b3136]">
+            <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-[0.2em] text-gray-600">
+              Task
+            </th>
+            <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-[0.2em] text-gray-600">
+              Due Date
+            </th>
+            <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-[0.2em] text-gray-600">
+              Status
+            </th>
+            <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-[0.2em] text-gray-600">
+              Actions
+            </th>
           </tr>
         </thead>
         <tbody className="flex flex-col justify-center w-full items-center gap-4">
@@ -118,7 +126,7 @@ const Todos = () => {
                 {item.title}
               </td>
               <td className="w-48.75 h-14 items-center flex">{item.data}</td>
-              <td className="border rounded-xl p-4 w-15.5 items-center flex text-xs text-center justify-center border-amber-400 h-5 bg-amber-400 ">
+              <td className="border rounded-xl p-4 w-15.5 items-center flex text-xs text-center justify-center border-amber-400 h-5 bg-amber-400  ">
                 <p>{item.status}</p>
               </td>
               <td className="gap-3 flex items-center ">
