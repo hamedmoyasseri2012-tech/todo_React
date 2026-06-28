@@ -4,6 +4,11 @@ import { IoFilter } from "react-icons/io5";
 // import { BiSort } from "react-icons/bi";
 // import { MdHelpOutline } from "react-icons/md";
 import { RiDeleteBin5Line } from "react-icons/ri";
+import { CiEdit } from "react-icons/ci";
+import { MdOutlineDone } from "react-icons/md";
+import { RiDeleteBin6Line } from "react-icons/ri";
+
+
 
 
 
@@ -15,6 +20,9 @@ const Todos = () => {
   const addTodo = (newItem) => {
     setTodo((prev) => [...prev, { ...newItem, status: "pending" }]);
   };
+  // const deleteTodo = () => {
+  //   setTodo(())
+  // }
 
   return (
     <div className="flex flex-col gap-4 w-full">
@@ -87,15 +95,33 @@ const Todos = () => {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody className="flex flex-row justify-center w-full items-center gap-4">
+        <tbody className="flex flex-col justify-center w-full items-center gap-4">
           {todo.map((item) => (
             <tr key={item.id} className="grid grid-cols-4">
-              <td className="flex justify-start items-center w-97.5 h-14">{item.title}</td>
+              <td className="flex justify-start items-center w-97.5 h-14">
+                {item.title}
+              </td>
               <td className="w-48.75 h-14 items-center flex">{item.data}</td>
               <td className="border rounded-xl p-4 w-15.5 items-center flex text-xs text-center justify-center border-amber-400 h-5 bg-amber-400">
                 <p>{item.status}</p>
               </td>
-              <td></td>
+              <td className="gap-3 flex items-center ">
+                <button className="w-10 h-6 border flex justify-center text-center items-center rounded-xl text-black bg-[#ffbc1d]">
+                  <i>
+                    <CiEdit />
+                  </i>
+                </button>
+                <button className="w-10 h-6 border flex justify-center text-center items-center rounded-xl text-black bg-[#3ad097]">
+                  <i>
+                    <MdOutlineDone />
+                  </i>
+                </button>
+                <button  className="w-10 h-6 border flex justify-center text-center items-center rounded-xl text-black bg-[#f77072]">
+                  <i>
+                    <RiDeleteBin6Line />
+                  </i>
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>

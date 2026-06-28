@@ -6,7 +6,6 @@ import { RiProgress2Line } from "react-icons/ri";
 const TodoStatus = () => {
   return (
     <>
-      
       <div className="grid grid-cols-4 w-full items-center bg-white text-start border rounded-xl shadow-xl-[#fdfdfd] border-[#ececec]">
         <div className="flex items-center justify-around border-r border-r-[#ececec] text-start pl-2">
           <div className="flex flex-col justify-around items-center ">
@@ -45,7 +44,9 @@ const TodoStatus = () => {
           </i>
         </div>
       </div>
-      <div className="border h-4 rounded-2xl bg-[#e5e6ea] border-[#e5e6ea]"></div>
+      <div className=" h-4 rounded-2xl bg-[#e5e6ea] w-full">
+        <div className=" h-4 rounded-2xl bg-[#7032f9] w-0  "></div>
+      </div>
     </>
   );
 };
